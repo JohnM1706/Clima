@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import Fromulario from "./Formulario";
+import Card from "./Card";
 
 const WatertherPanel = () =>{
     
@@ -56,6 +57,12 @@ const WatertherPanel = () =>{
         <React.Fragment>
             <Fromulario
                 newLocation = {getLocation}
+            />
+            <Card
+                showData = {show}
+                loadingData = {loading}
+                weather = {weather}
+                forecast = {forecast}
             />
         </React.Fragment>
     );
